@@ -12,7 +12,7 @@ public class QuickSort extends Sorter {
         if (left >= right) return;
 
         int pivotIndex = partition(left, right);
-        quickSort(left, pivotIndex - 1);
+        quickSort(left, pivotIndex);
         quickSort(pivotIndex + 1, right);
     }
 
@@ -38,6 +38,6 @@ public class QuickSort extends Sorter {
                 j--;
             }
         }
-        return i - 1;
+        return j;
     }
 }

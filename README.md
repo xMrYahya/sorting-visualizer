@@ -21,8 +21,6 @@ Sorting Visualizer displays integer collections as vertical bars and animates th
 
 - Java
 - JavaFX
-- IntelliJ IDEA project structure
-- No Maven or Gradle build file is present in the repository
 
 ## Architecture
 
@@ -67,22 +65,13 @@ During execution, the visualizer redraws the array after comparison, swap, and w
 
 ## Setup and Execution
 
-This repository is set up as a plain Java/IntelliJ project rather than a Maven or Gradle application.
+Open the project in any Java-compatible IDE or environment with JavaFX support.
 
-To run it in IntelliJ IDEA:
+1. Ensure a compatible JDK is available.
+2. Configure the JavaFX SDK correctly for your environment.
+3. Run `app.Main`.
 
-1. Open the project as an existing Java project.
-2. Ensure a compatible JDK is configured.
-3. Configure JavaFX SDK on the module path.
-4. Use the existing application run configuration or run `app.Main` directly.
-
-The checked-in IntelliJ configuration uses these VM options:
-
-```text
---module-path "C:\javafx-sdk-21.0.8\lib" --add-modules javafx.controls,javafx.fxml
-```
-
-The code uses JavaFX controls and canvas rendering, so a JavaFX SDK installation is required for local execution.
+The application uses JavaFX controls and canvas rendering, so JavaFX must be available at runtime.
 
 ## Demo
 

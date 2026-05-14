@@ -57,6 +57,7 @@ public class VisualizerView extends BorderPane {
 
         Sorter sorter = switch (algorithm) {
             case "Merge sort" -> new MergeSort();
+            case "Insertion sort" -> new InsertionSort();
             default -> new QuickSort();
         };
 

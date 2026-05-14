@@ -29,7 +29,7 @@ public class ParametersDialog extends Dialog<ParametersDialog.Params> {
         initOwner(owner);
         initModality(Modality.WINDOW_MODAL);
 
-        algoBox.getItems().addAll("Quick sort", "Merge sort");
+        algoBox.getItems().addAll("Quick sort", "Merge sort", "Insertion sort");
         algoBox.getSelectionModel().selectFirst();
 
         dataField.setPromptText("50,87,56,12,75,100,20,34,9");

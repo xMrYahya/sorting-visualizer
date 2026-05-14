@@ -16,7 +16,7 @@ public class Main extends Application {
     public void start(Stage stage) {
         visualizer = new VisualizerView();
 
-        MenuItem openParams = new MenuItem("Paramètres…");
+        MenuItem openParams = new MenuItem("Settings…");
         openParams.setOnAction(e -> {
             ParametersDialog dialog = new ParametersDialog(stage);
             dialog.showAndWait().ifPresent(params -> {
@@ -26,7 +26,7 @@ public class Main extends Application {
             });
         });
 
-        Menu menu = new Menu("Paramètres");
+        Menu menu = new Menu("Settings");
         menu.getItems().addAll(openParams);
         MenuBar bar = new MenuBar(menu);
 
@@ -35,7 +35,7 @@ public class Main extends Application {
         root.setCenter(visualizer);
 
         Scene scene = new Scene(root, 900, 520);
-        stage.setTitle("Laboratoire");
+        stage.setTitle("Sorting Visualizer");
         stage.setScene(scene);
         stage.show();
     }

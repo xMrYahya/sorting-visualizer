@@ -18,8 +18,8 @@ import java.util.Arrays;
 public class VisualizerView extends BorderPane {
 
     private final Canvas canvas = new Canvas(800, 420);
-    private final Button startBtn = new Button("Démarrer");
-    private final Button stopBtn = new Button("Arrêt");
+    private final Button startBtn = new Button("Start");
+    private final Button stopBtn = new Button("Stop");
     private Thread worker;
 
     private int[] data = new int[0];
